@@ -1,0 +1,45 @@
+.navigation{
+    display: block;
+    background-color: black;
+}
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: white;
+}
+.nav-item:hover {
+    background-color: #32a852;
+
+}
+
+.information{
+    display: block;
+    border:black;
+    border-style: double;
+    border-width: .75rem;
+    padding:1rem .25rem 0 .25rem;
+}
+
+h1{
+    background-color: #32a852;
+    margin:0;
+    padding: .5rem;
+    color:white;
+}
+
+.col, .container{
+    padding:0;
+}
+
+html{
+    background-color:#bdbebf;
+}
+.createBtn{
+    background-color: #32a852;
+    color:white;
+}
+label{
+    font-weight: bold;
+}

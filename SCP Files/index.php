@@ -7,8 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/styles.css">
     <title>SCP - Subject Files</title>
+
   </head>
   <body class="container">
 
@@ -80,7 +81,7 @@
                               
                 if ($subject_image){
                     echo "<p><img src='images/{$subject_image}' 
-                    alt='{$subject_image}'/></p>";
+                    alt='{$subject_image}'style='max-width:100%;'/></p>";
                 };
 
 

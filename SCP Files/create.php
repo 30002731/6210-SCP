@@ -4,11 +4,15 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style/styles.css">
     <title>SCP - Subject Files</title>
+    <script>
+        function popup(){
+            alert("New SCP Subject Created!!");
+        }
+    </script>
   </head>
   <body class="container">
     <h1>Create New SCP Subject</h1>
@@ -33,29 +37,30 @@
                 <br>
                 <label>Object Class:</label>
                 <br>
-                <input type="text" name="object_class" placeholder="Enter the object class" required class="form-control">
+                <input type="text" name="object_class" placeholder="Enter the object class..." required class="form-control">
                 <br>
                 <label>Special Containment Procedures:</label>
                 <br>
-                <input type="text" name="procedures" placeholder="Enter the procedures for the subject..." required class="form-control">
+                <textarea rows = "5" name = "procedures" placeholder="Enter the procedures for the subject..." required class="form-control"></textarea>
                 <br>
                 <label>Description:</label>
                 <br>
-                <input type="text" name="description" placeholder="Enter the description of the subject..." required class="form-control">
+                <textarea rows = "5" name = "description" placeholder="Enter the description for the subject..." required class="form-control"></textarea>
                 <br>
                 <label>Reference:</label>
                 <br>
-                <input type="text" name="reference" placeholder="Enter any references..." required class="form-control">
+                <textarea rows = "5" name = "reference" placeholder="Enter any references..." class="form-control"></textarea>
                 <br>
                 <label>Additional Information:</label>
                 <br>
-                <input type="text" name="notes" placeholder="Any additional notes..." required class="form-control">
+                <textarea rows = "5" name = "notes" placeholder="Any additional notes..." class="form-control"></textarea>
                 <br>
                 <label>Extra Information:</label>
                 <br>
-                <input type="text" name="extra" placeholder="And extra information..." required class="form-control">
+                <textarea rows = "5" name = "extra" placeholder="And extra information..." class="form-control"></textarea>
                 <br><br>
-                <button type="submit" class="btn createBtn">Create Subject</button>
+                <button type="submit" class="btn createBtn" onclick="popup()">Create Subject</button>
+            </div>
                 
             </form>
         </div>
